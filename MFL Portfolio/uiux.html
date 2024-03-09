@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon-16x16.png">
+    <title>Web Dev</title>
+
+</head>
+<script>
+  var offsetStart = 0;
+var offsetEnd = 0;
+
+window.addEventListener('scroll', () => {
+  document.documentElement.style.setProperty('--scroll', ( window.pageYOffset - offsetStart ) / ( document.body.offsetHeight - offsetStart - offsetEnd - window.innerHeight ));
+}, false);
+</script> 
+<body>
+
+  <div class="mousecursor" id="mouseCursor"><svg class="svg-cur" width="100" height="100" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181"/></svg></div>
+    <script>
+    let mouseCursor = document.getElementById("mouseCursor");
+
+window.addEventListener("mousemove",(e)=>{
+mouseCursor.style.top = e.pageY + 'px';
+mouseCursor.style.left = e.pageX + "px";
+})
+  </script>
+    
+  <div class="menu-bracket">
+  <input type="checkbox" id="menu-toggle"/>
+  <label id="trigger" for="menu-toggle"></label>
+  <label id="burger" for="menu-toggle"></label>
+  <ul id="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="product.html">Product Design</a></li>
+    <li><a href="webdev.html">Web Development</a></li>
+    <li><a href="uiux.html">UI/UX</a></li>
+    <li><a href="illustration.html">Illustrations</a></li>
+  </ul>
+  </div>
+
+  <section class="webdev-header">
+    <div class="uiux-cover"></div>
+  </section>
+
+  <section class="webdev-content">
+    <div class="bb-p1">
+        <div class="p1-title">
+            <h2>ZEA<br>LANDIA</h2>
+            <p class="green-title">BIG BIRD GAME</p>
+            <p>APP DESIGN</p>
+        </div>
+        <img src="images/bigbirdlogo-min.PNG">
+        <div class="p1-content">
+            <p>TEAM PROJECT</p><p>UI/UX</p><p>FIGMA PROTOTYPE</p>
+        </div>
+        <hr>
+    </div>
+
+    <div class="bb-p2">
+      <div class="p2-title">
+        <p class="mini-titles">Team Project</p>
+        <p class="mini-titles2">Team Project</p>
+        <h2>BIG BIRD GAME</h2>
+        <p class="p2-para">The project objective is to create a mobile app that encourages
+          users to become more involved in the recreational facilities
+          Wellington City Council has to offer.
+          The goal is to create a holistic and immersive
+          experience that combines digital entertainment with Wellingtons
+          unique recreational facilities. </p>
+    </div>
+    <img class="phone-1" src="images/phone1.jpg">
+    <img class="phone-2" src="images/phone2.jpg">
+    <h3 class="mini-title3">BRIEF</h3>
+    <p class="mini-titles4">Team Project</p>
+    <p class="mini-titles5">Team Project</p>
+    <hr class="linebreaker-2"></hr>
+    <h2 class="second-head">PROJECT DIRECTION</h2>
+    <p class="p3-para">The problem regarding this project brief, is the lack of
+      young individuals getting involved in Wellingtons recreational
+      facilities.
+      The solution to this would be to create an effective and
+      engaging SmartPhone App, designed to encourage young
+      individuals to get more involved with the local recreational
+      facilities Wellington has to offer. To achieve this, we will
+      conduct various research methods to better investigate our
+      target audience in order to produce a design solution for the
+      Wellington City Council.</p>
+
+      <h3 class="mini-title4">PRODUCT</h3>
+      <hr class="linebreaker-3">
+      <h2 class="third-head">PROTOTYPE</h2>
+      <p class="p4-para">The developed prototype represents a synthesis of feedback from the hifi
+        wireframes and aims to strike a balance between minimalism and engagement. The
+        inclusion of consistent directional cues and strategic use of colours and opacity enhances
+        the usability and legibility of the design. By simplifying the overall design and providing
+        an intuitive user experience, the design aligns with the needs and preferences of young
+        teenage users, creating a playful and comprehensive app design that fosters engagement
+        and enjoyment.</p>
+        <img class="phone-3" src="images/phone3.jpg">
+        <a class="buttonpop" href="#popup2">VIEW PROTOTYPE</a>
+  <div class="popup2" id="popup2">
+    <div class="popup-inner2">
+      <div class="popuptext2">
+        <h1>Overview</h1>
+        <p>The Big bird App was designed and presented through Figma, with functioning
+          buttons, animations, transitions, user input and more. Through Photoshop, After Effects,
+          and Illustrator, we were able to create an immersive and engaging app prototype,
+          to reach our project goals. <br> For a more indepth look into the process behind
+          the project, visit <a clss="portfolio-link" href="https://www.behance.net/gallery/174086381/Big-Bird-App">our Portfolio here</a>.
+        </p>
+      </div>
+      <div class="popupphoto2">
+        <video width="350" controls muted autoplay loop>
+          <source src="images/Big Bird edited - Made with Clipchamp.mp4" type="video/mp4">
+          <source src="images/Big Bird edited - Made with Clipchamp.ogg" type="video/ogg">
+        </video>
+      </div>
+      <a class="closepopup2" href="#footer-return"><p>X</p></a>
+    </div>
+  </div>
+
+
+    </div>
+
+
+  </section>
+
+
+
+  <footer>
+    <h2>Meredith Frances</h2>
+    <div class="footer--details">
+      <p class="my--details">Meredith F Lees</p>
+      <p class="my--details">Meredithflss@gmail.com</p>
+      <p class="my--details">Wellington, NZ</p>
+      <p class="my--details">64+ 27 570 6300</p>
+      
+    </div>
+    <div class="share">
+    <button class="btn1">
+      <svg fill-rule="nonzero" height="30px" width="30px" viewBox="0,0,256,256" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="instagram"><g style="mix-blend-mode: normal" text-anchor="none" font-size="none" font-weight="none" font-family="none" stroke-dashoffset="0" stroke-dasharray="" stroke-miterlimit="10" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="none" fill-rule="nonzero"><g transform="scale(8,8)"><path d="M11.46875,5c-3.55078,0 -6.46875,2.91406 -6.46875,6.46875v9.0625c0,3.55078 2.91406,6.46875 6.46875,6.46875h9.0625c3.55078,0 6.46875,-2.91406 6.46875,-6.46875v-9.0625c0,-3.55078 -2.91406,-6.46875 -6.46875,-6.46875zM11.46875,7h9.0625c2.47266,0 4.46875,1.99609 4.46875,4.46875v9.0625c0,2.47266 -1.99609,4.46875 -4.46875,4.46875h-9.0625c-2.47266,0 -4.46875,-1.99609 -4.46875,-4.46875v-9.0625c0,-2.47266 1.99609,-4.46875 4.46875,-4.46875zM21.90625,9.1875c-0.50391,0 -0.90625,0.40234 -0.90625,0.90625c0,0.50391 0.40234,0.90625 0.90625,0.90625c0.50391,0 0.90625,-0.40234 0.90625,-0.90625c0,-0.50391 -0.40234,-0.90625 -0.90625,-0.90625zM16,10c-3.30078,0 -6,2.69922 -6,6c0,3.30078 2.69922,6 6,6c3.30078,0 6,-2.69922 6,-6c0,-3.30078 -2.69922,-6 -6,-6zM16,12c2.22266,0 4,1.77734 4,4c0,2.22266 -1.77734,4 -4,4c-2.22266,0 -4,-1.77734 -4,-4c0,-2.22266 1.77734,-4 4,-4z"></path></g></g></svg>
+      <span class="tooltiptext1">
+        <div class="card--btn">
+          <svg fill="#000000" width="24px" viewBox="0 0 24 24" height="24px" xmlns="http://www.w3.org/2000/svg" class="account"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M12 5.9c1.16 0 2.1.94 2.1 2.1s-.94 2.1-2.1 2.1S9.9 9.16 9.9 8s.94-2.1 2.1-2.1m0 9c2.97 0 6.1 1.46 6.1 2.1v1.1H5.9V17c0-.64 3.13-2.1 6.1-2.1M12 4C9.79 4 8 5.79 8 8s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 9c-2.67 0-8 1.34-8 4v3h16v-3c0-2.66-5.33-4-8-4z"></path></svg>
+        </div>
+        <div class="username"><a class="username" href="https://figma.com/@mere_fran">@merririri</a></div>
+      </span>
+    </button>
+    <button class="btn2">
+      <svg height="30px" width="30px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" class="twitter"><path d="M 18.5 2 C 13.81752 2 10 5.8175204 10 10.5 C 10 13.800292 11.949927 16.592855 14.708984 18 C 11.949927 19.407145 10 22.199708 10 25.5 C 10 28.800292 11.949927 31.592855 14.708984 33 C 11.949927 34.407145 10 37.199708 10 40.5 C 10 45.18248 13.81752 49 18.5 49 C 23.18248 49 27 45.18248 27 40.5 L 27 33 L 27 29.65625 C 28.341367 32.201717 30.932066 34 34 34 C 38.406436 34 42 30.406432 42 26 C 42 22.378246 39.526173 19.428685 36.214844 18.449219 C 39.553558 17.301707 42 14.220224 42 10.5 C 42 5.8175204 38.18248 2 33.5 2 L 26 2 L 18.5 2 z M 18.5 4 L 25 4 L 25 17 L 18.5 17 C 14.89848 17 12 14.10152 12 10.5 C 12 6.8984796 14.89848 4 18.5 4 z M 27 4 L 33.5 4 C 37.10152 4 40 6.8984796 40 10.5 C 40 14.10152 37.10152 17 33.5 17 L 27 17 L 27 4 z M 18.5 19 L 25 19 L 25 32 L 18.5 32 C 14.89848 32 12 29.10152 12 25.5 C 12 21.89848 14.89848 19 18.5 19 z M 27 19 L 30.34375 19 C 28.908839 19.756146 27.756146 20.908838 27 22.34375 L 27 19 z M 34 20 C 37.325556 20 40 22.674446 40 26 C 40 29.325554 37.325556 32 34 32 C 30.674444 32 28 29.325554 28 26 C 28 22.674446 30.674444 20 34 20 z M 18.5 34 L 25 34 L 25 40.5 C 25 44.10152 22.10152 47 18.5 47 C 14.89848 47 12 44.10152 12 40.5 C 12 36.89848 14.89848 34 18.5 34 z"></path></svg>
+      <span class="tooltiptext2">
+        <div class="card--btn">
+          <svg fill="#000000" width="24px" viewBox="0 0 24 24" height="24px" xmlns="http://www.w3.org/2000/svg" class="account"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M12 5.9c1.16 0 2.1.94 2.1 2.1s-.94 2.1-2.1 2.1S9.9 9.16 9.9 8s.94-2.1 2.1-2.1m0 9c2.97 0 6.1 1.46 6.1 2.1v1.1H5.9V17c0-.64 3.13-2.1 6.1-2.1M12 4C9.79 4 8 5.79 8 8s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 9c-2.67 0-8 1.34-8 4v3h16v-3c0-2.66-5.33-4-8-4z"></path></svg>
+        </div>
+        <div class="username"><a class="username" href="https://figma.com/@mere_fran">@mere_fran</a></div>
+      </span>
+    </button>
+    <button class="btn3">
+      <svg height="30px" width="30px" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" class="git"><path d="M15,3C8.373,3,3,8.373,3,15c0,6.627,5.373,12,12,12s12-5.373,12-12C27,8.373,21.627,3,15,3z M24.084,10.843 c0.003,0.096,0.018,0.178,0.018,0.278c0,1.043-0.196,2.217-0.783,3.687l-2.987,8.637c-0.634,0.402-1.315,0.732-2.034,0.984 l-3.116-8.531l-2.991,8.692c-0.64-0.188-1.253-0.437-1.833-0.742L5.747,11.221c0.271-0.661,0.609-1.286,1.008-1.868 c0.102,0.002,0.217,0.005,0.307,0.005c1.076,0,2.743-0.131,2.743-0.131c0.556-0.031,0.62,0.783,0.066,0.849 c0,0-0.558,0.065-1.178,0.098l3.748,11.151l2.252-6.757l-1.602-4.396c-0.556-0.031-1.08-0.096-1.08-0.096 c-0.556-0.033-0.489-0.882,0.065-0.849c0,0,1.7,0.131,2.71,0.131c1.076,0,2.743-0.131,2.743-0.131 c0.556-0.031,0.62,0.783,0.066,0.849c0,0-0.559,0.065-1.178,0.098l3.72,11.066l1.028-3.434c0.522-1.337,0.783-2.444,0.783-3.327 c0-1.272-0.456-2.153-0.849-2.838c-0.521-0.849-1.012-1.566-1.012-2.415c0-0.849,0.58-1.64,1.431-1.794 C22.602,8.368,23.48,9.529,24.084,10.843z"></path></svg>
+      <span class="tooltiptext3">
+        <div class="card--btn">
+          <svg fill="#000000" width="24px" viewBox="0 0 24 24" height="24px" xmlns="http://www.w3.org/2000/svg" class="account"><path fill="#00000" d="M0 0h24v24H0V0z"></path><path d="M12 5.9c1.16 0 2.1.94 2.1 2.1s-.94 2.1-2.1 2.1S9.9 9.16 9.9 8s.94-2.1 2.1-2.1m0 9c2.97 0 6.1 1.46 6.1 2.1v1.1H5.9V17c0-.64 3.13-2.1 6.1-2.1M12 4C9.79 4 8 5.79 8 8s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 9c-2.67 0-8 1.34-8 4v3h16v-3c0-2.66-5.33-4-8-4z"></path></svg>
+        </div>
+        <div class="username"><a class="username" href="http://meredithfrances.online/">@merryflss</a></div>
+      </span>
+    </button>
+  </div>
+    
+    
+        
+  <a class="coraline coraline1" href="#popup"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><g stroke-width="0" id="SVGRepo_bgCarrier"></g><g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <path fill="none" d="M12.75 6V3.75H11.25V6L9 6C6.10051 6 3.75 8.3505 3.75 11.25V17.909C3.75 19.2019 4.7981 20.25 6.09099 20.25C6.71186 20.25 7.3073 20.0034 7.74632 19.5643L10.8107 16.5H13.1893L16.2537 19.5643C16.6927 20.0034 17.2881 20.25 17.909 20.25C19.2019 20.25 20.25 19.2019 20.25 17.909V11.25C20.25 8.3505 17.8995 6 15 6L12.75 6ZM18.75 11.25C18.75 9.17893 17.0711 7.5 15 7.5L9 7.5C6.92893 7.5 5.25 9.17893 5.25 11.25V17.909C5.25 18.3735 5.62652 18.75 6.09099 18.75C6.31403 18.75 6.52794 18.6614 6.68566 18.5037L10.1893 15H13.8107L17.3143 18.5037C17.4721 18.6614 17.686 18.75 17.909 18.75C18.3735 18.75 18.75 18.3735 18.75 17.909V11.25ZM6.75 12.75V11.25H8.25V9.75H9.75V11.25H11.25V12.75H9.75V14.25H8.25V12.75H6.75ZM15 10.875C15 11.4963 14.4963 12 13.875 12C13.2537 12 12.75 11.4963 12.75 10.875C12.75 10.2537 13.2537 9.75 13.875 9.75C14.4963 9.75 15 10.2537 15 10.875ZM16.125 14.25C16.7463 14.25 17.25 13.7463 17.25 13.125C17.25 12.5037 16.7463 12 16.125 12C15.5037 12 15 12.5037 15 13.125C15 13.7463 15.5037 14.25 16.125 14.25Z" clip-rule="evenodd" fill-rule="evenodd"></path> </g></svg><span></span></a>
+  <div class="popup" id="popup">
+    <div class="popup-inner">
+      <div class="outer_wrapper">
+        <div class="wrapper">
+    
+          <div class="cat_wrapper">
+            <div class="cat first_pose">
+              <div class="cat_head">
+                <svg x="0px" y="0px" width="100%" height="100%" viewBox="0 0 76.4 61.2" >
+                  <polygon class="eyes" points="63.8,54.1 50.7,54.1 50.7,59.6 27.1,59.6 27.1,54.1 12.4,54.1 12.4,31.8 63.8,31.8 "/>
+                  <path class="polygon" d="M15.3,45.9h5.1V35.7h-5.1C15.3,35.7,15.3,45.9,15.3,45.9z M45.8,56.1V51H30.6v5.1H45.8z M61.1,35.7H56v10.2h5.1
+                    V35.7z M10.2,61.2v-5.1H5.1V51H0V25.5h5.1V15.3h5.1V5.1h5.1V0h5.1v5.1h5.1v5.1h5.1v5.1c0,0,15.2,0,15.2,0v-5.1h5.1V5.1H56V0h5.1v5.1
+                    h5.1v10.2h5.1v10.2h5.1l0,25.5h-5.1v5.1h-5.1v5.1H10.2z"/>
+                </svg>
+    
+              </div>
+              <div class="body">
+                <svg x="0px" y="0px" width="100%" height="100%" viewBox="0 0 91.7 40.8" >
+                  <path class="st0" d="M91.7,40.8H0V10.2h5.1V5.1h5.1V0h66.2v5.1h10.2v5.1h5.1L91.7,40.8z"/>
+                </svg>
+    
+                <div class="tail">
+                  <svg x="0px" y="0px" width="100%" height="100%" viewBox="0 0 25.5 61.1" >
+                    <polygon class="st0" points="10.2,56 10.2,50.9 5.1,50.9 5.1,40.7 0,40.7 0,20.4 5.1,20.4 5.1,10.2 10.2,10.2 10.2,5.1 15.3,5.1 
+                      15.3,0 25.5,0 25.5,10.2 20.4,10.2 20.4,15.3 15.3,15.3 15.3,20.4 10.2,20.4 10.2,40.7 15.3,40.7 15.3,45.8 20.4,45.8 20.4,50.9 
+                      25.5,50.9 25.5,61.1 15.3,61.1 15.3,56 "/>
+                  </svg>
+                </div>
+              </div>
+              
+              <div class="front_legs">
+                <div class="leg one">
+                  <svg x="0px" y="0px" width="100%" height="100%" viewBox="0 0 14 30.5" >
+                    <polygon points="15.3,30.5 5.1,30.5 5.1,25.4 0,25.4 0,0 15.3,0 "/>
+                  </svg>
+                </div>
+                <div class="leg two">
+                  <svg x="0px" y="0px" width="100%" height="100%" viewBox="0 0 14 30.5" >
+                    <polygon points="15.3,30.5 5.1,30.5 5.1,25.4 0,25.4 0,0 15.3,0 "/>
+                  </svg>
+                </div>  
+              </div>
+              
+              <div class="back_legs">
+                <div class="leg three">
+                  <svg x="0px" y="0px" width="100%" height="100%" viewBox="0 0 14 30.5" >
+                    <polygon points="15.3,30.5 5.1,30.5 5.1,25.4 0,25.4 0,0 15.3,0 "/>
+                  </svg>
+                </div>
+                <div class="leg four">
+                  <svg x="0px" y="0px" width="100%" height="100%" viewBox="0 0 14 30.5" >
+                    <polygon points="15.3,30.5 5.1,30.5 5.1,25.4 0,25.4 0,0 15.3,0 "/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+    
+      <a class="closepopup" href="#footer-return"><p>X</p></a>
+    </div>
+  </div>
+    
+</footer>
+
+<script>
+  
+function init() { 
+const catWrapper = document.querySelector('.cat_wrapper')
+const wrapper = document.querySelector('.wrapper')
+const cat = document.querySelector('.cat')
+const head = document.querySelector('.cat_head')
+const legs = document.querySelectorAll('.leg')
+const pos = {
+  x: null,
+  y: null
+}
+
+const walk = () =>{
+  cat.classList.remove('first_pose')
+  legs.forEach(leg=>leg.classList.add('walk'))
+}
+
+const handleMouseMotion = e =>{
+  pos.x = e.clientX
+  pos.y = e.clientY
+  walk()
+}
+
+const handleTouchMotion = e =>{
+  if (!e.targetTouches) return
+  pos.x = e.targetTouches[0].offsetX
+  pos.y = e.targetTouches[0].offsetY
+  walk()
+}
+
+const turnRight = () =>{
+  cat.style.left = `${pos.x - 90}px`
+  cat.classList.remove('face_left')
+  cat.classList.add('face_right')
+}
+
+const turnLeft = () =>{
+  cat.style.left = `${pos.x + 10}px`
+  cat.classList.remove('face_right')
+  cat.classList.add('face_left')
+}
+
+const decideTurnDirection = () =>{
+  cat.getBoundingClientRect().x < pos.x ?
+    turnRight()
+    :
+    turnLeft()
+}
+
+const headMotion = () =>{
+  pos.y > (wrapper.clientHeight - 200) ?
+    head.style.top = '5px'
+    :
+    head.style.top = '-16px'
+}
+
+const jump = () =>{
+  catWrapper.classList.remove('jump')
+  if (pos.y < (wrapper.clientHeight - 450)) {
+    setTimeout(()=>{
+      catWrapper.classList.add('jump')
+    },10)
+  } 
+}
+
+const decideStop = ()=>{
+  if (cat.classList.contains('face_right') && pos.x - 90 === cat.offsetLeft ||
+      cat.classList.contains('face_left') && pos.x + 10 === cat.offsetLeft) {
+    legs.forEach(leg=>leg.classList.remove('walk'))    
+  }
+}
+
+setInterval(()=>{
+  if (!pos.x || !pos.y) return
+  decideTurnDirection()
+  headMotion()
+  decideStop()
+},100)
+
+setInterval(()=>{
+  if (!pos.x || !pos.y) return
+  jump()
+},1000)
+
+document.addEventListener('mousemove', handleMouseMotion)
+document.addEventListener('mousemove', handleTouchMotion)
+}
+
+window.addEventListener('DOMContentLoaded', init)
+
+
+</script>
+
+  </body>
+  </html>
